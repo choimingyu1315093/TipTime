@@ -9,8 +9,8 @@ import org.junit.Test
 import java.text.NumberFormat
 
 class TipUITests {
-    @get: Rule
-    val composeTestRule = createComposeRule()
+    @get: Rule //테스트 코드를 실행할 때마다 테스트 규칙을 자동으로 설정해주는 역할
+    val composeTestRule = createComposeRule() //테스트 규칙을 만들어서 변수에 담는다.
 
     @Test
     fun calculator_20_percent_tip(){
